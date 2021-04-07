@@ -1,9 +1,9 @@
 # main text of home
-name: Hardware
-bio: A Man who travels the world eating noodles
+name: 智能冰箱
+bio: 方便冰箱管理，减少食物浪费
 
 # twitter summary info
-description: A blog about technology and stuff related
+# description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
@@ -27,8 +27,8 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
-
+  # categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [project] 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 # twitter: mytwitter
