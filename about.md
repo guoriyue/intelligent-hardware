@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-![Profile Image](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/assets/images/profile.png)
+![Profile Image](/assets/images/profile.png)
 <!--![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})-->
 
 

@@ -42,7 +42,7 @@ description: Markdown summary with different options
 
 
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/assets/images/jekyll-logo-light-solid.png)
+![Screenshot](/assets/images/jekyll-logo-light-solid.png)
 
 
 系统框架如图所示，分为三个主要模块：
