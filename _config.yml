@@ -8,7 +8,7 @@ bio: 方便冰箱管理，减少食物浪费
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/cab.jpg
 
 
 
@@ -27,8 +27,8 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  # categories: [blog, project] # only show disqus for posts that have these categories
-  categories: [project] 
+  categories: [blog, project] # only show disqus for posts that have these categories
+  # categories: [project] 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 # twitter: mytwitter
@@ -37,7 +37,7 @@ disqus:
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-# github: mygithub
+github: IntelligentHardware
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -46,7 +46,7 @@ disqus:
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: guoriyue1226@gmail.com
 
 authors:
   johndoe:
@@ -86,13 +86,13 @@ blog: true
 read-time: true
 
 # do you want to show the "tags" inside the posts?
-show-tags: true
+show-tags: false
 
 # related posts inside a post?
 related: true
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: [blog,project]
 
 # show author block at the end of a post ?
 show-author: true
