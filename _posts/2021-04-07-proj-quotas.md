@@ -58,18 +58,18 @@ externalLink: false
 
 考虑智能冰箱的应用场景，系统需要满足低功耗、高准确率、低响应时间的特点。暂定指标数值如下表：
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/quotas1.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/quotas1.png)
 
 
 考虑上述指标，数据采集模块可按以下参数进行选取：
 
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/quotas2.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/quotas2.png)
 
 
 在这些规定的指标下，我们的预算是：
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/budgets.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/budgets.png)
 
 <!-----
 

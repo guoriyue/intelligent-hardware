@@ -17,7 +17,7 @@ description: Markdown summary with different options
 
 ## 多用音乐机
 
-![shot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/ideawyp.png)
+![shot](https://guoriyue.github.io/intelligent_hardware/assets/images/ideawyp.png)
 
 
 ## 智能冰箱

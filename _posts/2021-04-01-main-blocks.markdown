@@ -58,7 +58,7 @@ externalLink: false
 
 
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/jekyll-logo-light-solid.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/jekyll-logo-light-solid.png)
 
 
 系统框架如图所示，分为三个主要模块：
@@ -73,11 +73,11 @@ externalLink: false
 ## 物品拿出放入识别模块
 方法一：
 在检测到门已打开后，以一定时间间隔进行图像获取，判断放入或取出的物品种类。
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/open1.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/open1.png)
 
 
 方法二：检测到门已打开后，等待至测距结果返回正常值，则表示门已关闭，此时对于置物平台进行拍照，将识别结果与历史结果进行对比，得出物品的增加或减少结果。
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/open2.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/open2.png)
 
 
 

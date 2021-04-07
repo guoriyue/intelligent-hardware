@@ -17,4 +17,4 @@ description: Markdown summary with different options
 ## 甘特图
 
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/gant.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/gant.png)
