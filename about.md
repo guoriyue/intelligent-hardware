@@ -2,10 +2,14 @@
 title: About
 layout: page
 ---
-![Profile Image](assets/images/profile.png)
-<!--![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})-->
 
+<!--![Screenshot](/assets/images/profile.png)
 
+-->
+
+<!--![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
+-->
+![Profile Image](/assets/images/profile.jpg)
 
 <h2>项目简介</h2>
 

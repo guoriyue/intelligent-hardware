@@ -1,0 +1,20 @@
+---
+title: "小组讨论-任务分工"
+layout: post
+date: 2021-03-29 22:44
+
+tag:
+- markdown
+- elements
+star: false
+category: blog
+author: Mingfei
+description: Markdown summary with different options
+---
+
+这是第二次讨论的结果，我们讨论了一些技术实现的问题，并完成了时间安排与分工。
+
+## 甘特图
+
+
+![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/gant.png)

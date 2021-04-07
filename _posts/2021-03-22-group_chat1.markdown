@@ -1,7 +1,7 @@
 ---
-title: "Markdown Extra Components"
+title: "小组讨论-选题"
 layout: post
-date: 2016-02-24 22:48
+date: 2021-03-22 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -9,12 +9,35 @@ tag:
 - components
 - extra
 category: blog
-author: jamesfoster
+author: Mingfei
 description: Markdown summary with different options
 ---
 
-## Summary:
+今天组内进行了第一次讨论，大家提出了很多有趣的想法，在这里记录一下！
 
+## 多用音乐机
+
+![shot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/ideawyp.png)
+
+
+## 智能冰箱
+识别放进去的东西和冰箱主人（图像识别），还可以利用传感器实现冰箱温度控制，除臭控制等。还需要开发用户app，提醒用户冰箱里还有什么，什么要过期了，以及根据冰箱里现有的东西能做什么。还可以加推荐系统，给用户推荐菜品。甚至可以添加app内商城，当用户冰箱里缺少某些原料来做菜的时候，用户可以可以直接下单，享受闪送服务。
+
+
+## 未名湖保卫船
+
+用户使用app操作一个船在湖上前后左右移动。可以识别鸭子/鱼，喂鸭/鱼，看到鸭放鸭粮，看到鱼放鱼粮。识别垃圾/落叶，可以打捞起来回收，保护水域环境。扩展，可以对水下情况3d建模，展示在app内。
+
+## 化妆机
+用户app类似4399化妆小游戏，使用一个机械臂来化妆。可以先识别颜料颜色，再识别人脸，在人脸上化妆。有点类似给一张图，就可以画出一个图的画图机。智能电子实验的时候有很多人做画图机器，只是机械臂比较朴素，效果不太好。
+
+## 停车自动计价器
+可以是一个小装置，固定在路边车位旁。有摄像头可以识别车牌并计时来收费。它的能源来源是太阳能电池板，所以十分环保。或许还可以做一个终端，显示各个车位的情况和停车记录，显示更加直观。目前，停车自动计价器已经实用了，效果良好。
+
+## 60km小助手
+跑步小助手🐶，小车/飞行器上加个可以摇晃的部件。用户通过app联合地图规定小车的行驶路线。
+
+<!--
 You can pick as item to see how to apply in markdown.
 
 #### Especial Elements
@@ -194,3 +217,4 @@ Do you want some videos? Youtube, Vimeo or Vevo? Copy the embed code and paste o
 [4]: https://daringfireball.net/projects/markdown/basics
 [5]: https://daringfireball.net/projects/markdown/syntax
 [6]: https://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+-->

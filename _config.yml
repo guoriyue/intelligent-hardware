@@ -27,7 +27,7 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [] # only show disqus for posts that have these categories
   # categories: [project] 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -49,18 +49,24 @@ github: IntelligentHardware
 email: guoriyue1226@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
-    external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+  Mingfei:
+    name: mfg
+    bio: Hi!
+    external-image: true
+    picture: assets/images/mfp.jpg
+    twitter: guoriyue
+  # johndoe:
+  #   name: John Doe
+  #   bio: A Man who travels the world eating noodles
+  #   external-image: false
+  #   picture: assets/images/profile.jpg
+  #   twitter: johndoe
+  # jamesfoster:
+  #   name: James Foster
+  #   bio: A Man who develops software with coffee
+  #   external-image: false
+  #   picture: assets/images/james.jpg
+  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -83,7 +89,7 @@ about: true
 blog: true
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
 show-tags: false
@@ -95,7 +101,7 @@ related: true
 post-advance-links: [blog,project]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
 animation: true
