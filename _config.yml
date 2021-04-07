@@ -8,7 +8,7 @@ bio: 方便冰箱管理，减少食物浪费
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/cab.jpg
 
 
 
@@ -53,7 +53,7 @@ authors:
     name: John Doe
     bio: A Man who travels the world eating noodles
     external-image: false
-    picture: assets/images/cab.jpg
+    picture: assets/images/profile.jpg
     twitter: johndoe
   jamesfoster:
     name: James Foster
