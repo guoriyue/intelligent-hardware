@@ -1,7 +1,7 @@
 ---
-title: ":ramen: 系统框架"
+title: ":ramen: 硬件框架"
 layout: post
-date: 2020-04-01 22:10
+date: 2020-04-20 22:10
 tag: jekyll
 projects: true
 author: Mingfei
@@ -55,40 +55,21 @@ externalLink: false
 ----->
 
 
+## 硬件框图
+![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcb.png)
 
 
-
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/jekyll-logo-light-solid.png)
-
-
-系统框架如图所示，分为三个主要模块：
-① 硬件端：通过红外检测等手段判断图像采集的时间以进行图像采集，同时采集温度湿度等环境信息，实现数据的上传。
-② 云端：实现数据的分类，对图像进行识别，将识别结果与环境信息发送至用户端进行应用。
-③ 用户端：根据图像识别结果获取的冰箱内容，提供美食智能推荐，过期提醒等服务，根据传感器采集信息提供冰箱环境实时监控与异常报警等功能。
+![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcby.png)
 
 
-## 开门检测模块
-通过红外测距模块测量模块至冰箱门的距离。在静息状态下，测距结果将稳定在一个范围区间内。检测到距离超过稳定区间范围则表示门已打开，进入图像获取阶段。图像获取的触发方式可采用查询方式与中断方式实现，查询方式可以简化电路结构，中断方式可以提供更低的功耗。具体选择手段暂定。
-
-## 物品拿出放入识别模块
-方法一：
-在检测到门已打开后，以一定时间间隔进行图像获取，判断放入或取出的物品种类。
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/open1.png)
+这是我们的硬件框图和PCB原理图。供电采用usb连接充电宝；摄像头通过CSI总线连接树莓派；温湿度传感器和对射光电传感器通过GPIO链接树莓派，其中对射光电传感器通过与挡片协作，判断冰箱门是否开启；模拟电路部分是光敏电阻通过比较器输出，走GPIO，可以判断环境光照是否充足，是否需要在拍照时补光。
 
 
-方法二：检测到门已打开后，等待至测距结果返回正常值，则表示门已关闭，此时对于置物平台进行拍照，将识别结果与历史结果进行对比，得出物品的增加或减少结果。
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/open2.png)
+## 外壳及安装示意图
+![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcbk1.png)
 
 
-
-## 云端模块
-云端在接受到数据后，如果包含图片数据，则进行图像识别，将识别结果和传感器数据发送至用户端，否则仅发送传感器数据。
-
-① 功耗：与硬件端的数据采集频率成正相关，因此需要确定合理的采集频率，以实现功耗与响应时间的平衡。
-② 准确率：受照明条件、图像清晰程度影响。
-③ 响应时间：可分为云端数据处理与用户端应用两部分。
-
-
+![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcbk2.png)
 
 
 <!-----
