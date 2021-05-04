@@ -80,10 +80,10 @@ externalLink: false
 
 -->
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcbk1.png)
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbk1.png)
 
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbk2.png)
 
-![Screenshot](https://github.com/guoriyue/intelligent_hardware/tree/master/assets/images/pcbk2.png)
 
 <!-----
 
