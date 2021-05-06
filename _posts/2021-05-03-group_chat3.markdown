@@ -1,7 +1,7 @@
 ---
 title: "小组讨论-关键细节"
 layout: post
-date: 2021-04-22 20:48
+date: 2021-05-03 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -24,7 +24,7 @@ description: Markdown summary with different options
 4.按钮（保底策略）。
 
 因此，我们先尽量在PCB上做好集成，避免在完成PCB之后出现问题。
-
+这是目前确定的的PCB，可以看到把我们想到的都先尽量做上去了，所以比之前的要复杂。
 
 ![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbcomp.png)
 
@@ -38,8 +38,8 @@ description: Markdown summary with different options
 
 ![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbk1.png)
 
-## 电源/WI-FI
-我们选择的树莓派板子是比较耗电的，因此我们需要考虑供电这部分内容。并且，由于冰箱很可能有电磁屏蔽的效果，因此在冰箱门关上之后，我们的设备的WI-FI模块可能无法继续向服务器传递传感器信息。我们认为集成到冰箱内部可以通过内部走线解决这个问题，供电也一样。我们现在的设备是不能和冰箱组合在一起的，但是真正使用后，我们的设备会直接通过内部走线和冰箱连在一起。
+## 电源/Wi-Fi
+我们选择的树莓派板子是比较耗电的，因此我们需要考虑供电这部分内容。并且，由于冰箱很可能有电磁屏蔽的效果，因此在冰箱门关上之后，我们的设备的Wi-Fi模块可能无法继续向服务器传递传感器信息。我们认为集成到冰箱内部可以通过内部走线解决这个问题，供电也一样。我们现在的设备是不能和冰箱组合在一起的，但是真正使用后，我们的设备会直接通过内部走线和冰箱连在一起。
 
 
 
