@@ -1,0 +1,227 @@
+---
+title: "小组讨论-关键细节"
+layout: post
+date: 2021-04-22 20:48
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- markdown
+- components
+- extra
+category: blog
+author: Mingfei
+description: Markdown summary with different options
+---
+
+今天组内进行了第三次讨论，在开题报告之后，我们需要有一些修改的地方。
+
+## 如何确定拍照时间
+我们在识别图像的时候，希望能够在用户拿着食物放进冰箱的时就自动识别出来此时需要拍照，再将照片传给服务器。但是如何确定拍照时间是一个问题。这是我们讨论出的解决方案，正在尝试中。
+
+1.直接视频识别。
+2.人体感应模块（未收到货）。
+3.超声识别（❌太集中了，稍微偏离一点就识别不到）。
+4.按钮（保底策略）。
+
+因此，我们先尽量在PCB上做好集成，避免在完成PCB之后出现问题。
+
+
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbcomp.png)
+
+## 如何确定保质期
+图像识别可以识别出图像，但是很难识别出生产日期，保质期这种比较小的字体。因此，我们决定让用户手动填写，需要注意的是要把用户手动填写的这部分界面做的非常简单明确，避免影响使用体验。
+
+## 放哪里
+我们决定将我们的设备放在冰箱门的一侧，这样传感器可以最敏锐的收集数据，摄像头也可以最大程度的拍摄到用户放入物品的过程。
+就像这张安装示意图。
+
+
+![Screenshot](https://guoriyue.github.io/intelligent_hardware/assets/images/pcbk1.png)
+
+## 电源/WI-FI
+我们选择的树莓派板子是比较耗电的，因此我们需要考虑供电这部分内容。并且，由于冰箱很可能有电磁屏蔽的效果，因此在冰箱门关上之后，我们的设备的WI-FI模块可能无法继续向服务器传递传感器信息。我们认为集成到冰箱内部可以通过内部走线解决这个问题，供电也一样。我们现在的设备是不能和冰箱组合在一起的，但是真正使用后，我们的设备会直接通过内部走线和冰箱连在一起。
+
+
+
+
+<!--
+You can pick as item to see how to apply in markdown.
+
+#### Especial Elements
+- [Evidence](#evidence)
+- [Side-by-Side](#side-by-side)
+- [Star](#star)
+- [Especial Breaker](#especial-breaker)
+- [Spoiler](#spoiler)
+
+#### External Elements
+- [Gist](#gist)
+- [Codepen](#codepen)
+- [Slideshare](#slideshare)
+- [Videos](#videos)
+
+---
+
+## Evidence
+
+You can try the evidence!
+
+<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
+
+{% highlight html %}
+<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
+{% endhighlight %}
+
+---
+
+## Side-by-side
+
+Like the [Medium](https://medium.com/) component.
+
+**Image** on the left and **Text** on the right:
+
+{% highlight html %}
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+
+    <div class="toright">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+{% endhighlight %}
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+
+    <div class="toright">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+**Text** on the left and **Image** on the right:
+
+{% highlight html %}
+<div class="side-by-side">
+    <div class="toleft">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="toright">
+        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+</div>
+{% endhighlight %}
+
+<div class="side-by-side">
+    <div class="toleft">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="toright">
+        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+</div>
+
+---
+
+## Star
+
+You can give evidence to a post. Just add the tag to the markdown file.
+
+{% highlight raw %}
+star: true
+{% endhighlight %}
+
+---
+
+## Especial Breaker
+
+You can add a especial *hr* to your text.
+
+{% highlight html %}
+<div class="breaker"></div>
+{% endhighlight %}
+
+<div class="breaker"></div>
+
+---
+
+## Spoiler
+
+You can add an especial hidden content that appears on hover.
+
+{% highlight html %}
+<div class="spoiler"><p>your content</p></div>
+{% endhighlight %}
+
+<div class="spoiler"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
+---
+
+## Gist
+
+You can add Gists from github.
+
+{% highlight raw %}
+{ % gist sergiokopplin/91ff4220480727b47224245ee2e9c291 % }
+{% endhighlight %}
+
+{% gist sergiokopplin/91ff4220480727b47224245ee2e9c291 %}
+
+---
+
+## Codepen
+
+You can add Pens from Codepen.
+
+{% highlight html %}
+<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>
+    See the Pen <a href='https://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='https://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+{% endhighlight %}
+
+<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='https://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='https://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+---
+
+## Slideshare
+
+Add your presentations here!
+
+{% highlight html %}
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/hqDhSJoWkrHe7l" width="560" height="310" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+{% endhighlight %}
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/hqDhSJoWkrHe7l" width="560" height="310" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+---
+
+## Videos
+
+Do you want some videos? Youtube, Vimeo or Vevo? Copy the embed code and paste on your post!
+
+**Example**
+
+{% highlight html %}
+<iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
+{% endhighlight %}
+
+<iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
+
+[1]: https://daringfireball.net/projects/markdown/
+[2]: https://www.fileformat.info/info/unicode/char/2163/index.htm
+[3]: https://www.markitdown.net/
+[4]: https://daringfireball.net/projects/markdown/basics
+[5]: https://daringfireball.net/projects/markdown/syntax
+[6]: https://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+-->
