@@ -1,5 +1,5 @@
 ---
-title: "小组讨论-关键细节"
+title: "小组讨论-最终实验"
 layout: post
 date: 2021-06-13 20:48
 image: /assets/images/markdown.jpg
